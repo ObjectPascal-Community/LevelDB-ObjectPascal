@@ -1,5 +1,6 @@
 # LevelDB project specific
 /bin
+test.db
 
 # Compiled l10n files: .mo should be ignored
 *.mo
