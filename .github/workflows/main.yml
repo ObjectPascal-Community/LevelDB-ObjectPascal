@@ -28,7 +28,7 @@ jobs:
             fail-fast: false
             matrix:
                 operating-system: [ ubuntu-20.04, ubuntu-latest, windows-latest]
-                lazarus-versions: [ stable]
+                lazarus-versions: [ stable ]
         
         steps:
         - name: Checkout repository
@@ -41,7 +41,6 @@ jobs:
           uses: gcarreno/setup-lazarus@v3
           with:
               lazarus-version: ${{ matrix.lazarus-versions }}
-              include-packages: ""
               with-cache: false
 
         - name: Install LevelDB for *nix
