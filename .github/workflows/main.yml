@@ -52,4 +52,5 @@ jobs:
 
         - name: Run Test Application
           run: |
+            cp "dynamic-libs/win64/leveldb.dll" "bin"
             bin/testleveldb --all --format=plain
