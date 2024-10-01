@@ -2,7 +2,7 @@
 
 > **Disclaimer**
 >
-> In the spirit of full disclosure and due to my utter laziness in coming up with the bulk of the boilerplate code, I turned to `ChatGPT`.\
+> In the spirit of full disclosure and due to my utter laziness in coming up with the bulk of the boilerplate code, I turned to `ChatGPT` and `Claude`.\
 > You can see the series of prompts and answers I've got in the [research](research) folder.
 
 This is a `C` header translation for the key-value pair database [`LevelDB`](https://github.com/google/leveldb) from Google.
