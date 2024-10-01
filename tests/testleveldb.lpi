@@ -100,6 +100,11 @@
         <IsPartOfProject Value="True"/>
         <UnitName Value="TestLevelDBMain"/>
       </Unit>
+      <Unit>
+        <Filename Value="testleveldbbatch.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="TestLevelDBBatch"/>
+      </Unit>
     </Units>
   </ProjectOptions>
   <CompilerOptions>

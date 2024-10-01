@@ -22,6 +22,8 @@ type
   Pleveldb_readoptions_t = ^leveldb_readoptions_t;
   Pleveldb_seqfile_t = ^leveldb_seqfile_t;
   Pleveldb_snapshot_t = ^leveldb_snapshot_t;
+  Pleveldb_state_t = ^leveldb_state_t;
+  Pleveldb_status_t = ^leveldb_status_t;
   Pleveldb_writablefile_t = ^leveldb_writablefile_t;
   Pleveldb_writebatch_t = ^leveldb_writebatch_t;
   Pleveldb_writeoptions_t = ^leveldb_writeoptions_t;
@@ -40,6 +42,8 @@ type
   leveldb_readoptions_t = record end;
   leveldb_seqfile_t = record end;
   leveldb_snapshot_t = record end;
+  leveldb_state_t = record end;
+  leveldb_status_t = record end;
   leveldb_writablefile_t = record end;
   leveldb_writebatch_t = record end;
   leveldb_writeoptions_t = record end;
@@ -50,6 +54,9 @@ const
 {$ENDIF}
 {$IFDEF WINDOWS}
   libname = 'libleveldb.dll'; // May have a different name
+{$ENDIF}
+{$IFDEF DARWIN}
+  libname = 'libleveldb.???'; // May have a different name
 {$ENDIF}
   // Status codes
   LEVELDB_OK = 0;

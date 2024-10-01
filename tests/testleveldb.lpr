@@ -6,6 +6,7 @@ uses
   Classes
 , consoletestrunner
 , TestLevelDBMain
+, TestLevelDBBatch
 ;
 
 type
