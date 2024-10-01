@@ -56,7 +56,7 @@ const
   libname = 'libleveldb.dll'; // May have a different name
 {$ENDIF}
 {$IFDEF DARWIN}
-  libname = 'libleveldb.???'; // May have a different name
+  libname = 'libleveldb.dylib'; // May have a different name
 {$ENDIF}
   // Status codes
   LEVELDB_OK = 0;
