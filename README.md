@@ -21,7 +21,7 @@ It also contains a skeleton class to wrap the `C` header translation and make it
 
 ### Linux
 
-The package `libleveldb1d` should be installed in order for the tests to compile:
+The package `libleveldb1n` should be installed in order for the tests to compile:
 
 ```console
 $ sudo apt install libleveldb1n
