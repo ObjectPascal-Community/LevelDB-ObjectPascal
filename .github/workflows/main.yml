@@ -41,6 +41,7 @@ jobs:
           uses: gcarreno/setup-lazarus@v3
           with:
               lazarus-version: ${{ matrix.lazarus-versions }}
+              include-packages: ""
               with-cache: false
 
         - name: Install LevelDB for *nix
