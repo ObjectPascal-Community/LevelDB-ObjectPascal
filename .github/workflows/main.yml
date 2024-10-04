@@ -29,7 +29,7 @@ jobs:
             matrix:
                 operating-system: [ ubuntu-20.04, ubuntu-latest, windows-latest]
                 lazarus-versions: [ stable ]
-        
+
         steps:
         - name: Checkout repository
           uses: actions/checkout@v4
@@ -45,7 +45,7 @@ jobs:
 
         - name: Install LevelDB for *nix
           if: ${{ matrix.operating-system == 'ubuntu-latest' || matrix.operating-system == 'ubuntu-20.04' }}
-          run: sudo apt instal -y libleveldb1n
+          run: sudo apt install -y libleveldb1n
 
         - name: Build Test Application
           run: lazbuild -B --bm=Release "tests/testleveldb.lpi"
