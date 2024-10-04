@@ -23,8 +23,8 @@ It also contains a skeleton class to wrap the `C` header translation and make it
 
 The package `libleveldb-dev` should be installed in order for the tests to compile:
 
-```console
-$ sudo apt install libleveldb-dev
+```bash
+sudo apt install libleveldb-dev
 ```
 
 > **NOTE**: Since this is being tested on an Ubuntu 24.04, I'll need the community to help me pin down any different package.
