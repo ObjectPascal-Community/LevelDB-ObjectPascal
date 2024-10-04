@@ -53,7 +53,7 @@ const
   libname = 'libleveldb.so';
 {$ENDIF}
 {$IFDEF WINDOWS}
-  libname = 'libleveldb.dll'; // May have a different name
+  libname = 'leveldb.dll'; // May have a different name
 {$ENDIF}
 {$IFDEF DARWIN}
   libname = 'libleveldb.dylib'; // May have a different name
