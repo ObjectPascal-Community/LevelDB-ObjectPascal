@@ -45,7 +45,7 @@ jobs:
 
         - name: Install LevelDB for *nix
           if: ${{ matrix.operating-system == 'ubuntu-latest' || matrix.operating-system == 'ubuntu-20.04' }}
-          run: sudo apt install -y libleveldb1d
+          run: sudo apt install -y libleveldb-dev
 
         - name: Build Test Application
           run: lazbuild -B --bm=Release "tests/testleveldb.lpi"
